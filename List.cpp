@@ -31,3 +31,20 @@ ListNode* getNode(int value, ListNode* startNode) {
     return nullptr;
 
 }
+
+void printNodes(ListNode* startNode) {
+
+    ListNode* last = startNode;
+
+    if (last == nullptr) return;
+
+    int i = 0;
+
+    while (last->nextNode != nullptr) {
+        printf("\nNode%d with value %d", i, last->value);
+
+        i++;
+        last = last->nextNode;
+    }
+
+}
