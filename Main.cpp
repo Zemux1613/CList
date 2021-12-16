@@ -10,6 +10,10 @@ int main() {
         printf("add node %d\n", i);
     }
 
+    printf("\nNode6:\n");
+
+    printf("\n\nValue of node6 is %d\n\n", getNode(6, firstNode)->value);
+    
     delete firstNode;
 
     return 0;
