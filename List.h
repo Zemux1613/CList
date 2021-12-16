@@ -8,4 +8,4 @@ struct ListNode{
 void addNode(int value, ListNode* startNode);
 ListNode* getNode(int value, ListNode* startNode);
 void printNodes(ListNode* startNode);
-int removeLast(ListNode* startNode);
+void removeLast(ListNode* startNode);
