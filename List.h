@@ -6,3 +6,4 @@ struct ListNode{
 };
 
 void addNode(int value, ListNode* startNode);
+ListNode* getNode(int value, ListNode* startNode);
