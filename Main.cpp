@@ -9,6 +9,9 @@ int main() {
         addNode(i, firstNode);
         printf("add node %d\n", i);
     }
+    
+    printf("\nAll Nodes:\n");
+    printNodes(firstNode);
 
     printf("\nNode6:\n");
 
