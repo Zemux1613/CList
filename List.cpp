@@ -48,3 +48,21 @@ void printNodes(ListNode* startNode) {
     }
 
 }
+
+void removeLast(ListNode* startNode) {
+    
+    if (startNode->nextNode == NULL) {
+        retval = startNode->value;
+        free(startNode);
+    }
+
+    ListNode* current = startNode;
+    while (current->nextNode->nextNode != NULL) {
+        current = current->nextNode;
+    }
+
+    retval = current->nextNode->value;
+    free(current->nextNode);
+    current->nextNode = NULL;
+
+}
