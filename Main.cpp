@@ -17,6 +17,10 @@ int main() {
 
     printf("\n\nValue of node6 is %d\n\n", getNode(6, firstNode)->value);
     
+    removeLast(firstNode);
+
+    printNodes(firstNode);
+    
     delete firstNode;
 
     return 0;
